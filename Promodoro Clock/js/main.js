@@ -94,7 +94,9 @@ $(document).ready(function () {
             b--;
             c = 60;
             state = "break";
-            notifyMe("Take a break dude!! Have some tea...");
+            if (d == 1) {
+                notifyMe("Take a break dude!! Have some tea...");
+            }
             timedCount($(".inter"));
         }
         else if (b == 0) {
