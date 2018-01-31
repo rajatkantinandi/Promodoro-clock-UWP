@@ -1,0 +1,14 @@
+﻿<svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <defs>
+  <linearGradient y2="0" x2="1" y1="0" x1="0" id="svg_6">
+   <stop offset="0" stop-opacity="0.99609" stop-color="#f2e1e1"/>
+   <stop offset="1" stop-opacity="0.98828" stop-color="#ed8c71"/>
+  </linearGradient>
+ </defs>
+  <rect fill="#333333" stroke="#333333" stroke-width="0.3" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="0" y="0" width="50" height="50" id="svg_3"/>
+ <g>
+  <title>Layer 1</title>
+  <path transform="translate(3.47058)" id="svg_5" d="m5.37787,7.39807l28.26007,15.42768c0,0 -29.32794,15.67407 -29.32794,15.54059c0,-0.13348 1.06787,-30.96826 1.06787,-30.96826z" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0.3" stroke="#d813d8" fill="url(#svg_6)"/>
+  <rect transform="translate(4.27148, 0.667419)" id="svg_7" height="30.30084" width="3.3371" y="7.79852" x="32.87555" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0.3" stroke="#d813d8" fill="url(#svg_6)"/>
+ </g>
+</svg>

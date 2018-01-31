@@ -1,0 +1,17 @@
+﻿<svg width="25" height="25" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <defs>
+  <linearGradient id="svg_1" x1="0" y1="0" x2="1" y2="0">
+   <stop stop-color="#f2e1e1" stop-opacity="0.99609" offset="0"/>
+   <stop stop-color="#def" stop-opacity="0.98438" offset="1"/>
+  </linearGradient>
+ </defs>
+ 
+  <rect fill="#333333" stroke="#333333" stroke-width="0.3" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="0" y="0" width="25" height="25" id="svg_3"/>
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_5">
+   <rect transform="translate(2.30885, 0.732076)" id="svg_2" height="19.54079" width="3.37881" y="1.69261" x="4.45197" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0.3" stroke="#00bf00" fill="url(#svg_1)"/>
+   <rect id="svg_4" transform="translate(0.675762, 0.0563135) translate(0.732076, -1.63309) translate(5.74398, 1.54862) translate(2.30885, 0.732076)" height="19.54079" width="3.37881" y="1.69261" x="4.45197" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0.3" stroke="#00bf00" fill="url(#svg_1)"/>
+  </g>
+ </g>
+</svg>

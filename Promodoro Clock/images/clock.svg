@@ -1,0 +1,13 @@
+﻿<svg width="19.999999999999996" height="19.999999999999996" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <g>
+  <title>Layer 1</title>
+  <circle fill-opacity="0" id="svg_1" r="7.61093" cy="12.29009" cx="10.10011" stroke-width="0.3" stroke="#007f00" fill="#000000"/>
+  <path transform="translate(0, 0.0750847) translate(0, 0.0750847) translate(0, 0.0750847) translate(0, 0.0750847) translate(0, 0.0750847) translate(0, 0.0750847) translate(0, 0.0750847) translate(0, 0.0750847) translate(0, 0.0750847) translate(0, 0.0750847) translate(0, 0.0750847) translate(0, 0.0750847) translate(0, 0.0750847) translate(0, 0.0750847) translate(0, 0.0750847) translate(0, 0.0750847) translate(0, 0.0750847) translate(0, 0.0750847) translate(0, 0.0750847) translate(0, 0.0750847) translate(0, 0.0750847) translate(0, 0.0750847) translate(0, 0.0750847) translate(0, 0.0750847) translate(0, 0.0750847) translate(0, 0.0750847) translate(0, 0.0750847) translate(0, 0.0750847) translate(0, 0.0750847) translate(0, 0.0750847)" id="svg_4" d="m5.11971,5.73378l8.90949,-0.40252l-3.29285,4.77732l3.3795,3.64813l-8.05881,0.4343l2.94623,-3.99558l-3.88357,-4.46166l0.00001,0.00001z" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0.3" stroke="#007f00" fill="url(#svg_3)"/>
+ </g>
+ <defs>
+  <radialGradient id="svg_3" spreadMethod="pad" cx="0.5" cy="0.5">
+   <stop stop-color="#3d6b5e" stop-opacity="0.99609" offset="0.04167"/>
+   <stop stop-color="#d6e8f9" stop-opacity="0.99219" offset="0.99089"/>
+  </radialGradient>
+ </defs>
+</svg>

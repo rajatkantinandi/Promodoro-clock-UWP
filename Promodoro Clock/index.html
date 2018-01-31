@@ -1,12 +1,62 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title>Promodoro_Clock</title>
-    <link href="css/default.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <title>Promodoro Clock</title>
+    <link rel="stylesheet" href="css/default.css">
+
 </head>
 <body>
-    <div>Content goes here!</div>
+    <div class="app">
+        <div class="header">
+            <h1>
+                <img src="images/clock.svg" width="40px" height="40px" /> Promodoro Clock
+            </h1>
+        </div>
+        <div class="time">
+            <div class="break">
+                <h3>Break</h3>
+                <div class="setup">
+                    <button class="control minus"> - </button>
+                    <span class="value">5 min</span>
+                    <button class="control plus"> + </button>
+                </div>
+            </div>
+            <div class="duration">
+                <h3>Session</h3>
+                <div class="setup">
+                    <button class="control minus"> - </button>
+                    <span class="value">25 min</span>
+                    <button class="control plus"> + </button>
+                </div>
+            </div>
+        </div>
+        <div class="clock">
+            <div class="backg">
+            </div>
+            <div class="clocks">
+                <div class="controls">
+                    <button class="play control fa-play"></button>
+                    <button class="next control fa-forward"></button>
+                </div>
+                <div class="session">
+                    <h2>Session</h2>
+                    <h1>
+                        <span class="min">25</span>:
+                        <span class="sec">00</span>
+                    </h1>
+                </div>
+                <div class="inter">
+                    <h2>Break</h2>
+                    <h1>
+                        <span class="min">05</span>:
+                        <span class="sec">00</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='jquery-2.1.4.min.js'></script>
     <script src="js/main.js"></script>
 </body>
 </html>
