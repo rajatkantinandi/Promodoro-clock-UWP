@@ -50,11 +50,11 @@ $(document).ready(function () {
     });
     function timedCount(elem) {
         if (state == "session") {
-            var trans = 200 * (duration * 60 - (d - 1) * 60 - c) / (duration * 60);
+            var trans = 400 * (duration * 60 - (d - 1) * 60 - c) / (duration * 60);
             $(".inter").css("display", "none");
             $(".session").css("display", "block");
             $(".backg").addClass("backs").removeClass("backb");
-            $(".backs").css("transform", "translatey(" + trans + "px)");
+            $(".backs").css({ "margin-top": trans + "px", "animation": "blinkgreen 2s infinite ease-in-out"});
             $(".clock").css("border", "1px solid green");
             if (c < 60) {
                 elem.find(".min").text((d < 10) ? "0" + (d - 1) : (d - 1));
@@ -67,11 +67,11 @@ $(document).ready(function () {
             }
         }
         else {
-            var trans2 = 200 * (breaktime * 60 - b * 60 - c) / (breaktime * 60);
+            var trans2 = 400 * (breaktime * 60 - b * 60 - c) / (breaktime * 60);
             $(".session").css("display", "none");
             $(".inter").css("display", "block");
             $(".backg").addClass("backb").removeClass("backs");
-            $(".backb").css("transform", "translatey(" + trans2 + "px)");
+            $(".backb").css({ "margin-top": trans2 + "px", "animation": "blinkred 2s infinite ease-in-out" });
             $(".clock").css("border", "1px solid red");
             if (c == 60) {
                 elem.find(".min").text((b < 10) ? "0" + (b + 1) : (b + 1));
@@ -80,9 +80,9 @@ $(document).ready(function () {
                 elem.find(".min").text((b < 10) ? "0" + b : b);
             }
         }
-        if (c >= 0) {
+        if (c > 0) {
             elem.find(".sec").text((c == 60) ? "00" : ((c < 10) ? "0" + c : c));
-            c--;//-1
+            c--;//0
             t = setTimeout(function () { timedCount(elem); }, 1000);
         }
         else if (d > 1) {
@@ -91,12 +91,12 @@ $(document).ready(function () {
             timedCount($(".session"));
         }
         else if (b > 0) {
+            if (b == breaktime) {
+                notifyMe("Take a break dude!! Have some tea...");
+            }
             b--;
             c = 60;
             state = "break";
-            if (d == 1) {
-                notifyMe("Take a break dude!! Have some tea...");
-            }
             timedCount($(".inter"));
         }
         else if (b == 0) {

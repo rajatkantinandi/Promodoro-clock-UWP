@@ -1,22 +1,11 @@
-﻿.control.fa-forward{
-    background:url(../images/next.svg);
-    background-repeat:no-repeat;
-    background-size:25px;
-}
-.control.fa-play {
-    background: url(../images/play.svg);
-    background-repeat: no-repeat;
-    background-size:25px;
-}
-.control.fa-pause {
-    background: url(../images/pause.svg);
-    background-repeat: no-repeat;
-}
-.app {
+﻿.app {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.header {
+    text-align: center;
 }
 
 .time {
@@ -24,18 +13,6 @@
     align-items: center;
     justify-content: space-between;
     padding: 5vmin;
-}
-
-h3 {
-    margin: 5px;
-}
-
-h2 {
-    margin: 8px;
-}
-
-h1 {
-    margin: 10px;
 }
 
 .break {
@@ -68,77 +45,134 @@ h1 {
     font-weight: bolder
 }
 
+    .setup:hover {
+        background: white;
+        color: #222233;
+        border: none;
+    }
+
 .control {
     background: #222222;
     border: none;
     font-weight: bolder;
     text-align: center;
     color: white;
-    font-size: 15px;
+    font-size: 12px;
     cursor: pointer;
     border-radius: 10px;
-    width:25px;
-    height:25px;
+    width: 25px;
+    height: 25px;
 }
 
     .control:hover {
-        box-shadow:0px 0px 3px 2px blue;
+        box-shadow: 0px 0px 8px -1px blue;
     }
 
     .control:disabled {
         color: grey;
     }
 
-.setup:hover {
-    background: white;
-    color: #222233;
-    border: none;
-}
+    .control.fa-forward {
+        background: url(../images/next.svg);
+        background-repeat: no-repeat;
+        background-size: 25px;
+    }
 
-.header {
-    text-align: center;
-}
+    .control.fa-play {
+        background: url(../images/play.svg);
+        background-repeat: no-repeat;
+        background-size: 25px;
+    }
 
+    .control.fa-pause {
+        background: url(../images/pause.svg);
+        background-repeat: no-repeat;
+    }
 .clock {
-    background: transparent;
+    background: #FFF9C4;
     border: 1px solid green;
-    padding-top: 50px;
-    height: 150px;
+    height: 200px;
     width: 200px;
     text-align: center;
     border-radius: 50%;
     transform: scale(1.4);
+    transform-origin: 50% 0%;
     box-shadow: 0px 0px 15px -1px black;
-    position: absolute;
-    top: 250px;
     z-index: 10;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .clocks {
     position: absolute;
-    margin-left: 50px;
     z-index: 10;
 }
 
 .backg {
-    width: 200px;
-    margin-top: -50px;
+    width: 220px;
     height: 200px;
     position: absolute;
     z-index: 5;
 }
 
+@keyframes blinkgreen {
+    0% {
+        background: #81de2f;
+        transform:rotateZ(-0.5deg);
+    }
+
+    50% {
+        background-color: #afb;
+        transform: rotateZ(0.5deg);
+    }
+
+    100% {
+        background-color: #81de2f;
+        transform: rotateZ(-0.5deg);
+    }
+}
 .backs {
     background: #afb;
     z-index: 5;
+    animation:blinkgreen 2s infinite ease-in-out;
 }
+@keyframes blinkred {
+    0% {
+        background: #dc654a;
+        transform: rotateZ(-0.5deg);
+    }
 
+    50% {
+        background-color: #fab;
+        transform: rotateZ(0.5deg);
+    }
+
+    100% {
+        background-color: #dc654a;
+        transform: rotateZ(-0.5deg);
+    }
+}
 .backb {
     background: #fab;
     z-index: 5;
+    animation: blinkred 2s infinite ease-in-out;
 }
 
 .inter {
     display: none;
 }
+h3 {
+    margin: 5px;
+}
+
+h2 {
+    margin: 8px;
+}
+
+h1 {
+    margin: 10px;
+}
+
